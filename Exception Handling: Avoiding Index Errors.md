@@ -1,4 +1,4 @@
-# Exception Handling in Python: Avoiding Index Errors
+# EX 4d: Exception Handling in Python: Avoiding Index Errors
 
 ## 🎯 Aim
 To write a Python program that handles an **IndexError** when trying to access an element beyond the available range of a list.
@@ -11,8 +11,42 @@ To write a Python program that handles an **IndexError** when trying to access a
 3. Print the result based on whether the index access succeeds or fails.
 
 ## 🧾 Program
-Add code here
+```
+class CSE:
+    def setvalues(self, a, b):
+        self.a = a
+        self.b = b
+
+    def mul(self):
+        print("Result: ", self.a * self.b)
+
+    def div(self):
+        if self.b != 0:
+            print("Result: ", self.a // self.b)
+        else:
+            print("Cannot divide by zero")
+
+a = int(input())
+b = int(input())
+
+obj = CSE()
+obj.setvalues(a, b)
+while True:
+    choice = int(input())
+    if choice == 1:
+        obj.mul()
+    elif choice == 2:
+        obj.div()
+    elif choice == 0:
+        print("Exiting!")
+        break
+    else:
+        print("Invalid choice")
+```
 
 ## Output
+<img width="443" height="288" alt="Screenshot 2025-11-22 093916" src="https://github.com/user-attachments/assets/c8c0b9f4-c315-4294-92bb-69dfc433da3d" />
+
 
 ## Result
+Thus, the Python program using a class and conditional statements successfully performed multiplication or floor division based on the user's choice.
